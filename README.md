@@ -1,4 +1,4 @@
-# @dbrowserx/dat-legacy-tools
+# dweb-legacy-tools
 
 Currently includes one tool: export legacy dats to a folder.
 
