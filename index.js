@@ -1,12 +1,12 @@
 const path = require('path')
 const crypto = require('crypto')
-const dwebfs = require('dwebfs')
+const hyperdrive = require('hyperdrive')
 const datStorage = require('./dat-storage')
-const pda = require('dbrowser-dweb-api')
+const pda = require('pauls-dat-api')
 const dft = require('diff-file-tree')
-const swarmDefaults = require('dbrowser-swarm-defaults')
-const discoverySwarm = require('dweb-discovery-swarm')
-const hypercoreProtocol = require('ddatabase-protocol')
+const swarmDefaults = require('datland-swarm-defaults')
+const discoverySwarm = require('discovery-swarm')
+const hypercoreProtocol = require('hypercore-protocol')
 const DAT_SWARM_PORT = 3282
 
 // globals
@@ -52,7 +52,7 @@ function getArchiveMetaPath (key) {
 
 async function loadArchive (key) {
   var metaPath = getArchiveMetaPath(key)
-  archive = dwebfs(datStorage.create(metaPath), Buffer.from(key, 'hex'), {sparse: true})
+  archive = hyperdrive(datStorage.create(metaPath), Buffer.from(key, 'hex'), {sparse: true})
   archive.on('error', err => {
     throw err
   })
