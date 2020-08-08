@@ -1,20 +1,20 @@
 {
-  "name": "@beaker/dat-legacy-tools",
-  "version": "1.1.0",
-  "description": "Tools to access legacy dats stored in Beaker",
+  "name": "dweb-legacy-tools",
+  "version": "1.0.0",
+  "description": "Tools to access legacy dwebs stored in dBrowser",
   "main": "index.js",
   "bin": "bin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Paul Frazee <pfrazee@gmail.com>",
+  "author": "Jared Rice <jrice@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "datland-swarm-defaults": "^1.0.2",
+    "dbrowser-swarm-defaults": "git://github.com/dBrowser/dbrowser-swarm-defaults.git#3a3dec92756c4553fb0bfa9303998e9b7c9bb1d4",
     "diff-file-tree": "^2.3.2",
-    "discovery-swarm": "^6.1.0",
-    "hyperdrive": "^9.16.0",
-    "pauls-dat-api": "^8.1.0",
+    "dweb-discovery-swarm": "git://github.com/DistributedWeb/dweb-discovery-swarm.git#f598ee54d366846cc887efbe906356d39a48c908",
+    "dwebfs": "git://github.com/DistributedWeb/dwebfs.git#a42d386686c68fd116ee2fd21feeacde0d8a53a2",
+    "dbrowser-dweb-api": "git://github.com/dBrowser/dbrowser-dweb-api.git#0ea6830b5cb93fcecc3684008244682c0d96ff20",
     "random-access-file": "^2.0.1",
     "random-access-indexed-file": "^2.0.0",
     "sodium-signatures": "^2.1.1",

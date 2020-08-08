@@ -1,7 +1,7 @@
-# @beaker/dat-legacy-tools
+# dweb-legacy-tools
 
-Currently includes one tool: export legacy dats to a folder.
+Currently includes one tool: export legacy dwebs to a folder.
 
 ```
-Usage: bin.js {beaker-data-dir} {key} {export-target-dir}
+Usage: bin.js {dbrowser-data-dir} {key} {export-target-dir}
 ```
