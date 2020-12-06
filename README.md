@@ -1,7 +1,7 @@
 # dweb-legacy-tools
 
-Currently includes one tool: export legacy dats to a folder.
+Currently includes one tool: export legacy dDrives to a folder.
 
 ```
-Usage: bin.js {dbrowserx-data-dir} {key} {export-target-dir}
+Usage: bin.js {dbrowser-data-dir} {key} {export-target-dir}
 ```
